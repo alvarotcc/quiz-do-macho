@@ -63,7 +63,7 @@ function answerPariu(answer) {
 // Função que exibe a resposta final
 function displayFinalAnswer(message) {
     // Muda o fundo da página para uma imagem local
-    document.body.style.backgroundImage = "url('./assets/bugat)"; // Substitua pelo caminho da sua imagem
+    document.body.style.backgroundImage = "url('./.assets/background.jpg)"; // Substitua pelo caminho da sua imagem
     document.body.style.backgroundSize = "cover"; // Para que a imagem cubra toda a tela
     document.body.style.backgroundPosition = "center"; // Centraliza a imagem na tela
     document.body.style.backgroundAttachment = "fixed"; // A imagem fica fixa ao rolar a página
@@ -100,3 +100,8 @@ function restart() {
     location.reload(); // Recarrega a página para reiniciar
 }
 
+// Função para alterar a cor de fundo da página
+function changeBackgroundColor() {
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); // Cor aleatória
+    document.body.style.backgroundColor = randomColor; // Aplica a cor aleatória no fundo
+}
