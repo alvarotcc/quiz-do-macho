@@ -100,8 +100,3 @@ function restart() {
     location.reload(); // Recarrega a página para reiniciar
 }
 
-// Função para alterar a cor de fundo da página
-function changeBackgroundColor() {
-    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); // Cor aleatória
-    document.body.style.backgroundColor = randomColor; // Aplica a cor aleatória no fundo
-}
