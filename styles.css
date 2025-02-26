@@ -119,7 +119,7 @@ body {
     text-align: center;
     display: none;
     background-color: rgb(2, 102, 12);
-    background-image: url(./.assets/background2.png); /* imagem de fundo da segunda pergunta */
+    background-image: url(./assets/background2.png); /* imagem de fundo da segunda pergunta */
     background-position: center center;
     color: white;
     padding: 20px;
@@ -189,7 +189,7 @@ body {
 
 /* Cores específicas para cada pergunta */
 #question-container {
-    background-image: url(./.assets/background.jpg); /* imagem de fundo da primeira pergunta */
+    background-image: url(./assets/background.jpg); /* imagem de fundo da primeira pergunta */
 }
 
 .final-answer {
@@ -244,7 +244,7 @@ body {
     display: none;
     text-align: center;
     background-color: rgb(102, 37, 2);  /* Cor de fundo para "Já pariu?" */
-    background-image: url(./.assets/background.jpg); /* imagem de fundo da nova pergunta */
+    background-image: url(./assets/background.jpg); /* imagem de fundo da nova pergunta */
     background-position: center center;
     color: white;
     padding: 20px;

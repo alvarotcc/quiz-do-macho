@@ -63,7 +63,7 @@ function answerPariu(answer) {
 // Função que exibe a resposta final
 function displayFinalAnswer(message) {
     // Muda o fundo da página para uma imagem local
-    document.body.style.backgroundImage = "url('./.assets/background.jpg)"; // Substitua pelo caminho da sua imagem
+    document.body.style.backgroundImage = "url('./assets/background.jpg)"; // Substitua pelo caminho da sua imagem
     document.body.style.backgroundSize = "cover"; // Para que a imagem cubra toda a tela
     document.body.style.backgroundPosition = "center"; // Centraliza a imagem na tela
     document.body.style.backgroundAttachment = "fixed"; // A imagem fica fixa ao rolar a página
