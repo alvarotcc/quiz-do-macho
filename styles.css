@@ -20,26 +20,24 @@ body {
     width: 100%;
     background-color: #c5060629;
     color: white;
-    display: flex; /* Flexbox para alinhamento */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Alinha verticalmente no centro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1px;
     font-size: 25px;
 }
 
 /* Logo */
 #menu img {
-    width: 75px; /* Tamanho do logo */
+    width: 75px;
     height: auto;
-    margin-left: 10px; /* Espaço entre o texto e o logo */
+    margin-left: 10px;
 }
 
 /* Texto dentro do menu */
 #menu span {
-    margin-right: 10px; /* Espaço entre o texto e o logo */
+    margin-right: 10px;
 }
-
-
 
 /* Estilo para a pergunta */
 .question-container {
@@ -116,10 +114,10 @@ body {
 
 /* Segunda pergunta */
 #second-question {
-    text-align: center;
     display: none;
+    text-align: center;
     background-color: rgb(2, 102, 12);
-    background-image: url(./assets/background2.png); /* imagem de fundo da segunda pergunta */
+    background-image: url(./assets/background2.png);
     background-position: center center;
     color: white;
     padding: 20px;
@@ -201,7 +199,7 @@ body {
     padding: 15px 30px;
     margin-top: 20px;
     font-size: 18px;
-    background-color: #0763be; /* Cor de fundo do botão de reiniciar */
+    background-color: #0763be;
     color: white;
     border: none;
     border-radius: 5px;
@@ -210,7 +208,7 @@ body {
 }
 
 .restart-button:hover {
-    background-color: #043771; /* Cor de fundo ao passar o mouse */
+    background-color: #043771;
 }
 
 .restart-button:focus {
@@ -274,4 +272,114 @@ body {
 
 #third-question button:hover {
     background-color: #555;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Menu */
+    #menu {
+        font-size: 18px;
+    }
+
+    /* Estilo para a pergunta */
+    .question-container {
+        height: auto;
+    }
+
+    .question-container input {
+        width: 80%;
+    }
+
+    .question-container button {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    /* Estilo para a resposta final */
+    .final-answer {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .final-answer p {
+        font-size: 32px;
+    }
+
+    /* Botões de reinício */
+    .restart-button {
+        width: 80%;
+    }
+
+    /* Centralização para a segunda pergunta */
+    #second-question {
+        width: 90%;
+    }
+
+    /* Centralização para as respostas Sim/Não */
+    .response {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .response p {
+        font-size: 32px;
+    }
+
+    /* Ajustes para o botão "Próxima" */
+    #next-button {
+        width: 80%;
+    }
+}
+
+/* Responsividade para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+    /* Menu */
+    #menu {
+        font-size: 16px;
+    }
+
+    /* Estilo para a pergunta */
+    .question-container input {
+        width: 90%;
+    }
+
+    .question-container button {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    /* Estilo para a resposta final */
+    .final-answer {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .final-answer p {
+        font-size: 28px;
+    }
+
+    /* Botões de reinício */
+    .restart-button {
+        width: 90%;
+    }
+
+    /* Centralização para a segunda pergunta */
+    #second-question {
+        width: 95%;
+    }
+
+    /* Centralização para as respostas Sim/Não */
+    .response {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .response p {
+        font-size: 28px;
+    }
+
+    /* Ajustes para o botão "Próxima" */
+    #next-button {
+        width: 90%;
+    }
 }
