@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Macho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="menu">
+        <img src="./.assets/logo.png" alt="Logo" id="logo">
+        <span>Detector de Macho</span> <!-- Envolvendo o texto em um <span> para um controle mais fino -->
+    </div>
+
+    <!-- Pergunta inicial -->
+    <div class="question-container" id="question-container">
+        <h1 id="question-text">Qual seu nome?</h1>
+        <input type="text" id="nameInput" placeholder="Digite seu nome" required>
+        <br>
+        <button onclick="nextStep(); changeBackgroundColor()">Adiante</button>
+    </div>
+
+    <!-- Resposta final -->
+    <div id="final-answer" class="final-answer" style="display: none;">
+        <p id="final-answer-text"></p>
+        <button id="next-button" onclick="nextQuestion(); changeBackgroundColor()" style="display: none;">Tentar novamente</button>
+        <button class="restart-button" onclick="restart(); changeBackgroundColor()">Voltar ao Início</button>
+    </div>
+
+    <!-- Segunda pergunta -->
+    <div id="second-question" class="question-container" style="display: none;">
+        <h1>Você ainda tem dúvidas?</h1> <!-- Pergunta acima dos botões -->
+        <button onclick="answerQuestion('sim'); changeBackgroundColor()">Sim</button>
+        <button onclick="answerQuestion('não'); changeBackgroundColor()">Não</button>
+    </div>
+
+    <!-- Respostas Sim/Não -->
+    <div id="sim-response" class="response" style="display: none;">
+        <p>Então dê a bunda para ver.</p>
+        <button class="restart-button" onclick="restart(); changeBackgroundColor()">Voltar ao Início</button>
+    </div>
+
+    <div id="nao-response" class="response" style="display: none;">
+        <p>Então vai procurar o que fazer.</p>
+        <button class="restart-button" onclick="restart(); changeBackgroundColor()">Voltar ao Início</button>
+    </div>
+
+    <!-- Nova pergunta "Já pariu?" -->
+    <div id="third-question" class="question-container" style="display: none;">
+        <h1>Já menstruou?</h1>
+        <button onclick="answerPariu('sim'); changeBackgroundColor()">Sim</button>
+        <button onclick="answerPariu('não'); changeBackgroundColor()">Não</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

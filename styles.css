@@ -1,0 +1,277 @@
+/* Estilos gerais */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Menu */
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c5060629;
+    color: white;
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha verticalmente no centro */
+    padding: 1px;
+    font-size: 25px;
+}
+
+/* Logo */
+#menu img {
+    width: 75px; /* Tamanho do logo */
+    height: auto;
+    margin-left: 10px; /* Espaço entre o texto e o logo */
+}
+
+/* Texto dentro do menu */
+#menu span {
+    margin-right: 10px; /* Espaço entre o texto e o logo */
+}
+
+
+
+/* Estilo para a pergunta */
+.question-container {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #222;
+    color: white;
+}
+
+.question-container button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #933d04;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question-container button:hover {
+    background-color: #e7af0a;
+}
+
+/* Estilo para a resposta final */
+.final-answer {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    background-color: #021f03;
+    padding: 50px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.final-answer p {
+    font-size: 48px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Botão "Próxima" */
+#next-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background-color: #018407;
+}
+
+/* Segunda pergunta */
+#second-question {
+    text-align: center;
+    display: none;
+    background-color: rgb(2, 102, 12);
+    background-image: url(./.assets/background2.png); /* imagem de fundo da segunda pergunta */
+    background-position: center center;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Texto "Você ainda tem dúvidas?" */
+#second-question h1 {
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+
+#second-question button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#second-question button:hover {
+    background-color: #555;
+}
+
+/* Respostas Sim/Não */
+.response {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    background-color: #444;
+    padding: 50px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.response p {
+    font-size: 48px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.response button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #0e9087;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.response button:hover {
+    background-color: #1eff00;
+}
+
+/* Cores específicas para cada pergunta */
+#question-container {
+    background-image: url(./.assets/background.jpg); /* imagem de fundo da primeira pergunta */
+}
+
+.final-answer {
+    background-color: #021402; /* Cor de fundo da resposta final */
+}
+
+/* Botões de reinício */
+.restart-button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #0763be; /* Cor de fundo do botão de reiniciar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.restart-button:hover {
+    background-color: #043771; /* Cor de fundo ao passar o mouse */
+}
+
+.restart-button:focus {
+    outline: none;
+}
+
+/* Centralizando a caixa de perguntas "Você ainda tem dúvidas?" */
+#second-question {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#second-question button {
+    margin-top: 40px;
+}
+
+/* Centralizando as respostas Sim/Não */
+.response {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Estilo para a nova pergunta "Já pariu?" */
+#third-question {
+    display: none;
+    text-align: center;
+    background-color: rgb(102, 37, 2);  /* Cor de fundo para "Já pariu?" */
+    background-image: url(./.assets/background.jpg); /* imagem de fundo da nova pergunta */
+    background-position: center center;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#third-question h1 {
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+
+#third-question button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#third-question button:hover {
+    background-color: #555;
+}
