@@ -53,7 +53,7 @@ function answerPariu(answer) {
     if (answer === 'sim') {
         finalMessage = `${name}, você é mulher!`;
     } else {
-        finalMessage = `${name} e você é gay.`;  // Resposta padrão caso a resposta seja "Não"
+        finalMessage = `${name} você é gay.`;  // Resposta padrão caso a resposta seja "Não"
     }
 
     // Exibe a resposta final
