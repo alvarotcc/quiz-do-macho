@@ -275,7 +275,7 @@ body {
 }
 
 /* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
+@media (max-heidth: 480px) {
     /* Menu */
     #menu {
         font-size: 18px;
@@ -312,7 +312,7 @@ body {
 
     /* Centralização para a segunda pergunta */
     #second-question {
-        width: 91%;
+        width: 90%;
     }
 
     /* Centralização para as respostas Sim/Não */
